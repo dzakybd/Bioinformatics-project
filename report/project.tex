@@ -1,46 +1,39 @@
-\documentclass[12pt]{article}
-\usepackage{lingmacros}
-\usepackage{tree-dvips}
+\documentclass[a4paper,oneside]{article}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{newtxtext,newtxmath}
+\usepackage[top=0.7in, bottom=0.7in, left = 0.7in, right = 0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{caption}
+\setlist{nolistsep}
+\setlength{\belowcaptionskip}{-10pt}
+\captionsetup[figure]{labelformat=empty}
 \begin{document}
+\title{\vspace{-0.7in}Term Project Proposal\\
+Cancer Prediction using Single Nucleotide Polymorphism Dataset}
+\author{Tanjung Dion (201899213)\\Fawwaz Dzaky Zakiyal (201899213)\\}
+\date{Bioinformatics (Fall 2018)}
+\maketitle
+ 
+\section{Background}
+The RFID based indoor positioning usually implemented in indoor object tracking, flight baggage handling, etc. The process start with a RFID reader detects a RFID tag when the object with the tag enters the reader’s detection range. But, often the recorded data inherent uncertainty, including noise/cross readings (it must be detected by a reader, but it detected by multiple readers) and incompleteness/missing readings (it must be detected by a reader, but it did not detected). Thus, the reading results are considered unclean and we need to cleansing this indoor RFID tracking data by reducing the noise, and recovering the incompleteness.
 
-\section*{Notes for My Paper}
+\section{Problem Statement}
+Modeling of indoor RFID trajectory data with uncertainties using IR-MHMM;
 
-Don't forget to include examples of topicalization.
-They look like this:
+\section{Problem Scope}
+It compare three Learned models.
 
-{\small
-\enumsentence{Topicalization from sentential subject:\\ 
-\shortex{7}{a John$_i$ [a & kltukl & [el & 
-  {\bf l-}oltoir & er & ngii$_i$ & a Mary]]}
-{ & {\bf R-}clear & {\sc comp} & 
-  {\bf IR}.{\sc 3s}-love   & P & him & }
-{John, (it's) clear that Mary loves (him).}}
-}
+\section{Related Works}
+It compare three Learned models.
 
-\subsection*{How to handle topicalization}
+\section{Methodology}
+It compare three Learned models.
 
-I'll just assume a tree structure like (\ex{1}).
-
-{\small
-\enumsentence{Structure of A$'$ Projections:\\ [2ex]
-\begin{tabular}[t]{cccc}
-    & \node{i}{CP}\\ [2ex]
-    \node{ii}{Spec} &   &\node{iii}{C$'$}\\ [2ex]
-        &\node{iv}{C} & & \node{v}{SAgrP}
-\end{tabular}
-\nodeconnect{i}{ii}
-\nodeconnect{i}{iii}
-\nodeconnect{iii}{iv}
-\nodeconnect{iii}{v}
-}
-}
-
-\subsection*{Mood}
-
-Mood changes when there is a topic, as well as when
-there is WH-movement.  \emph{Irrealis} is the mood when
-there is a non-subject topic or WH-phrase in Comp.
-\emph{Realis} is the mood when there is a subject topic
-or WH-phrase.
-
+\begin{thebibliography}{1}
+\bibitem{} A. I. Baba, H. Lu, T. B. Pedersen, and X. Xie. {\em Handling false
+negatives in indoor RFID data.} In MDM, pages 117–126, 2014.
+\bibitem{} B. Fazzinga, S. Flesca, F. Furfaro, and F. Parisi. {\em Cleaning trajectory data of RFID-monitored objects through conditioning under integrity constraints.} In EDBT, pages
+379–390, 2014.
+\end{thebibliography}
 \end{document}
