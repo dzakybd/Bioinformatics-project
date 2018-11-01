@@ -15,20 +15,45 @@ Cancer Prediction using Single Nucleotide Polymorphism Dataset}
 \date{Bioinformatics (Fall 2018)}
 \maketitle
  
-\section{Background}
-The RFID based indoor positioning usually implemented in indoor object tracking, flight baggage handling, etc. The process start with a RFID reader detects a RFID tag when the object with the tag enters the reader’s detection range. But, often the recorded data inherent uncertainty, including noise/cross readings (it must be detected by a reader, but it detected by multiple readers) and incompleteness/missing readings (it must be detected by a reader, but it did not detected). Thus, the reading results are considered unclean and we need to cleansing this indoor RFID tracking data by reducing the noise, and recovering the incompleteness.
+\section{Introduction}
+The
 
-\section{Problem Statement}
-Modeling of indoor RFID trajectory data with uncertainties using IR-MHMM;
+\section{Vocabulary}
+\begin{itemize}
+\item \textbf{Single Nucleotide Polymorphisms (SNP)}: a variation in a single base pair in a DNA sequence.
+\item \textbf{Somatic Mutations}: genetic alteration acquired by a cell that can be passed to the progeny of the mutated cell in the course of cell division. Somatic mutations are frequently caused by environmental factors, such as exposure to ultraviolet radiation or certain chemicals.
+\item \textbf{Gleason Score}: a measure (from 2-10) of the aggression of prostate cancer cells based on clinical pathology of prostate tissue.
+\end{itemize}
 
-\section{Problem Scope}
-It compare three Learned models.
-
-\section{Related Works}
-It compare three Learned models.
 
 \section{Methodology}
+\subsection{Dataset}
+The data used in this paper is publicly available through the National Cancer Institute GDC Data Portal, and can be found online under Project TCGA-PRAD. This data set consists of genomic information and clinical pathology reports belonging to roughly 500 patients who have been diagnosed with prostate cancer (a Gleason Score anywhere between 2 to 10). Of the genomic information in this dataset, we used the SNP profiles of each patient. These SNP profiles specifically contain patient somatic mutations along with the position of each mutation on their genomes. The clinical pathology reports were also critical for our analysis because they contain the Gleason scores for each patient, which allows us to determine whether a patient has HGPCa. With respect to how the samples were actually drawn, all patients were sequenced using the Illumina HiSeq 2000 Sequencing System shortly after they were diagnosed with prostate cancer.
+
+\subsection{System Design}
 It compare three Learned models.
+\subsection{Preprocessing}
+Significant amounts of pre-processing needed to be performed in our to make the data usable in any way. First (and most challenging), we had to consolidate our data across hundreds of clinical pathology reports and SNP profiles. After consolidation, we constructed a feature matrix with 500 rows and 19,950 columns in which each row corresponds to a patient and each column corresponds to a single SNP.
+\par
+We will also applied the adjustments described below to each column in order to normalize our data and using Principal Component Analysis (PCA) as feature selection algorithm to eliminate the useless SNPs and reduce the search space. 
+\subsection{Classifier Algorithm}
+
+Perform a classification for cancer prediction :
+\begin{enumerate}
+\item K-Nearest Neighbor (KNN)
+\item Support Vector Machine (SVM)
+\item Multilayer Perceptron (MLP)
+\end{enumerate}
+
+\subsection{Testing \& Evaluation}
+We were interested in finding a model that has the maximal classification accuracy, given by the metric \ref{eq:1}, where $y_{i}'$ is the predicted label for instance $i$, $y$ is the true label for instance $i$, and $I()$ is an indicator function, in which it returns $1$ if the statement within it is true and $0$ if the statement within it is false. We used this metric to evaluate our accuracy on the cross-validation and testing sets.
+
+\begin{equation} \label{eq:1}
+accuracy =  \frac{1}{n}  \sum_{i=1}^n  I(y_{i}' = y_{i})
+\end{equation}
+
+
+
 
 \begin{thebibliography}{1}
 \bibitem{} A. I. Baba, H. Lu, T. B. Pedersen, and X. Xie. {\em Handling false
