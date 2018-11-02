@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  1 NOV 2018 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  2 NOV 2018 11:26
 entering extended mode
 **./project.tex
 (project.tex
@@ -481,68 +481,65 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count115
 \c@ContinuedFloat=\count116
 )
-LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 11
+LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 10
 .
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 11.
+(Font)              scaled to size 10.0pt on input line 10.
 
-(project.aux
-
-LaTeX Warning: Label `' multiply defined.
-
-)
+(project.aux)
 \openout1 = `project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 11.
-LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 11
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 10.
+LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 10
 .
- (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\omlntxmi.fd
+
+(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 10.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 10.
 
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 11.
-LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 11
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 10.
+LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 10
 .
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 10.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 1
-1.
+0.
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    ... okay on input line 10.
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -640,44 +637,44 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 16.
+(Font)              scaled to size 17.28pt on input line 15.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
+(Font)              scaled to size 12.0pt on input line 15.
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 1
-6.
+5.
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 16.
+(Font)              scaled to size 12.0pt on input line 15.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 16.
+(Font)              scaled to size 8.8pt on input line 15.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 16.
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 16.
+(Font)              scaled to size 6.6pt on input line 15.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 15.
 
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 16.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 15.
 
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 16.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 15.
 
 
 (C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 18.
+(Font)              scaled to size 14.4pt on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 18.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 18.
+(Font)              scaled to size 14.4pt on input line 17.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
 3.
 
@@ -694,52 +691,55 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 30.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
+<dataset_detail.jpg, id=1, 583.42969pt x 417.81094pt>
+File: dataset_detail.jpg Graphic file (type jpg)
+<use dataset_detail.jpg>
+Package pdftex.def Info: dataset_detail.jpg  used on input line 34.
+(pdftex.def)             Requested size: 347.4297pt x 248.80779pt.
+<system_design.png, id=2, 975.645pt x 132.495pt>
+File: system_design.png Graphic file (type png)
+<use system_design.png>
+Package pdftex.def Info: system_design.png  used on input line 44.
+(pdftex.def)             Requested size: 446.69426pt x 60.66135pt.
 
 [1
 
 {C:/Users/HANSUNG/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 64.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 64.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 64.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 59.
+(Font)              scaled to size 10.0pt on input line 74.
 
-
-Package caption Warning: Unused \captionsetup[figure] on input line 10.
-See the caption package documentation for explanation.
-
-[2] (project.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[2 <./dataset_detail.jpg> <./system_design.png>] (project.aux) ) 
 Here is how much of TeX's memory you used:
- 6768 strings out of 492970
- 96095 string characters out of 3135848
- 160791 words of memory out of 3000000
- 10489 multiletter control sequences out of 15000+200000
+ 6785 strings out of 492970
+ 96383 string characters out of 3135848
+ 161743 words of memory out of 3000000
+ 10502 multiletter control sequences out of 15000+200000
  62090 words of font info for 107 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,6n,92p,949b,210s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/ntx-ec-tlf
-.enc}{C:/Users/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/ntx-ot1
--tlf.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/HAN
-SUNG/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}<C:/Users/HA
-NSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users
-/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Us
-ers/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C
-:/Users/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rntxmi.pfb>
-<C:/Users/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rntxmi7.p
-fb><C:/Users/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr
-.pfb><C:/Users/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txex
-s.pfb><C:/Users/HANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txs
-ys.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on project.pdf (2 pages, 114361 bytes).
+ 53i,6n,92p,1069b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/HANSU
+NG/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{C:/Users/HA
+NSUNG/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Prog
+ram Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/HANSUNG/AppData/Roam
+ing/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}<C:/Users/HANSUNG/AppData/Roa
+ming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/HANSUNG/AppData/
+Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/HANSUNG/AppDa
+ta/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Users/HANSUNG/A
+ppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rntxmi.pfb><C:/Users/HANSUNG
+/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rntxmi7.pfb><C:/Users/HANS
+UNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/HA
+NSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/H
+ANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txsys.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on project.pdf (2 pages, 211471 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
