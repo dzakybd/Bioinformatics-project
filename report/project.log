@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.15)  2 NOV 2018 22:00
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  2 NOV 2018 11:26
+>>>>>>> a374d6045f283317c902d843f6f9471588533428
 =======
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  2 NOV 2018 11:26
 >>>>>>> a374d6045f283317c902d843f6f9471588533428
@@ -679,10 +683,16 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 <<<<<<< HEAD
+<<<<<<< HEAD
 (Font)              scaled to size 14.4pt on input line 18.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 34.
 
+=======
+(Font)              scaled to size 14.4pt on input line 17.
+LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
+3.
+>>>>>>> a374d6045f283317c902d843f6f9471588533428
 =======
 (Font)              scaled to size 14.4pt on input line 17.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
@@ -728,6 +738,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 [2 <./dataset_detail.jpg> <./system_design.png>] (project.aux) ) 
 Here is how much of TeX's memory you used:
 <<<<<<< HEAD
+<<<<<<< HEAD
  6668 strings out of 494889
  99314 string characters out of 3176656
  153046 words of memory out of 3000000
@@ -743,6 +754,8 @@ pfb></Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/
 type1/public/tex-gyre/qtmri.pfb>
 Output written on project.pdf (1 page, 82449 bytes).
 =======
+=======
+>>>>>>> a374d6045f283317c902d843f6f9471588533428
  6785 strings out of 492970
  96383 string characters out of 3135848
  161743 words of memory out of 3000000
@@ -765,6 +778,9 @@ NSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/H
 ANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txsys.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
 Output written on project.pdf (2 pages, 211471 bytes).
+<<<<<<< HEAD
+>>>>>>> a374d6045f283317c902d843f6f9471588533428
+=======
 >>>>>>> a374d6045f283317c902d843f6f9471588533428
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
