@@ -1,19 +1,15 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.15)  2 NOV 2018 22:00
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  2 NOV 2018 11:26
->>>>>>> a374d6045f283317c902d843f6f9471588533428
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  2 NOV 2018 11:26
->>>>>>> a374d6045f283317c902d843f6f9471588533428
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840) (preloaded format=pdflatex 2018.10.15)  17 NOV 2018 20:55
 entering extended mode
 **./project.tex
 (project.tex
 LaTeX2e <2018-04-01> patch level 5
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -28,39 +24,48 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/tools/indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/graphics/graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/graphics/keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/graphics/graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/graphics/trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/graphics-cfg/graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/graphics-def/pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\newtxtext.sty
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/newtxtext.sty"
 Package: newtxtext 2018/03/27 v1.531
 
 `newtxtext' v1.531, 2018/03/27 Text macros taking advantage of TeX-Gyre Termes 
 fonts (msharpe)
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\fontaxes\fontaxes.sty
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/fontaxes/fontaxes.sty"
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -69,29 +74,36 @@ LaTeX Info: Redefining \scshape on input line 37.
 )
 \ntx@fs=\dimen105
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/xkeyval/xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/xkeyval/xkeyval.tex"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/xkeyval/xkvutils.tex"
 \XKV@toks=\toks15
 \XKV@tempa@toks=\toks16
 )
 \XKV@depth=\count88
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/etoolbox/etoolbox.sty"
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count89
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/textcomp.sty"
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -107,12 +119,14 @@ Package textcomp Info: Sub-encoding information:
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 Package textcomp Info: Changing ? sub-encoding to TS1/0 on input line 80.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/ts1enc.dfu"
 File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -249,28 +263,36 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\newtxmath.sty
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/newtxmath.sty"
 Package: newtxmath 2018/05/15 v1.553
 
 `newtxmath' v1.553, 2018/05/15 Math macros based originally on txfonts (msharpe
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+)
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/amsmath/amsmath.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/amsmath/amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/amsmath/amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen106
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/amsmath/amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen107
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/amsmath/amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count90
@@ -311,19 +333,23 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/ifxetex/ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\centernot.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/oberdiek/centernot.sty"
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
 \tx@cntz=\count102
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\generic\binhex\binhex.tex)
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/binhex/binhex.tex")
 \tx@Isdigit=\count103
 \tx@IsAlNum=\count104
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 171.
@@ -440,13 +466,16 @@ LaTeX Font Info:    Redeclaring math symbol \m@thbbch@rA on input line 1929.
 \ntx@jmath=\count110
 LaTeX Info: Redefining \not on input line 2322.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/geometry/geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/ifpdf.sty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -463,8 +492,10 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen122
 \Gm@dimlist=\toks22
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/geometry/geometry.cfg"))
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/enumitem/enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip46
 \enit@outerparindent=\dimen123
@@ -472,10 +503,12 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box28
 \enitdp@description=\count114
 )
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/caption/caption.sty"
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/caption/caption3.sty"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen124
@@ -492,20 +525,21 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 10
 .
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\t1ntxtlf.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/t1ntxtlf.fd"
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 10.
-
-(project.aux)
+ (project.aux)
 \openout1 = `project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 10.
 LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 10
 .
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\omlntxmi.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/omlntxmi.fd"
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
 LaTeX Font Info:    ... okay on input line 10.
@@ -521,14 +555,16 @@ LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 10.
 LaTeX Font Info:    Try loading font information for U+ntxexa on input line 10.
 
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxexa.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/untxexa.fd"
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 10.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 10.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/base/ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 10.
@@ -536,7 +572,8 @@ LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 10.
 LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 10
 .
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmsntxsy.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/lmsntxsy.fd"
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
 LaTeX Font Info:    ... okay on input line 10.
@@ -544,12 +581,14 @@ LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 10.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 1
 0.
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\lmxntxexx.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/lmxntxexx.fd"
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
 LaTeX Font Info:    ... okay on input line 10.
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/conte
+xt/base/supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
 \scratchdimen=\dimen131
@@ -562,35 +601,45 @@ LaTeX Font Info:    ... okay on input line 10.
 \MPnumerator=\count121
 \makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks25
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+)
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/oberdiek/epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/oberdiek/grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/oberdiek/kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/gener
+ic/oberdiek/pdftexcmds.sty"
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -650,7 +699,9 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 15.
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 1
 5.
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\ot1ntxtlf.fd
+
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/ot1ntxtlf.fd"
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -662,19 +713,22 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 LaTeX Font Info:    Try loading font information for U+ntxmia on input line 15.
 
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxmia.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/untxmia.fd"
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Try loading font information for U+ntxsym on input line 15.
 
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsym.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/untxsym.fd"
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 15.
 
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\untxsyc.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/untxsyc.fd"
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -682,24 +736,12 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-<<<<<<< HEAD
-<<<<<<< HEAD
-(Font)              scaled to size 14.4pt on input line 18.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 34.
-
-=======
 (Font)              scaled to size 14.4pt on input line 17.
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
 3.
->>>>>>> a374d6045f283317c902d843f6f9471588533428
-=======
-(Font)              scaled to size 14.4pt on input line 17.
-LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 2
-3.
->>>>>>> a374d6045f283317c902d843f6f9471588533428
 
-(C:\Users\HANSUNG\AppData\Roaming\MiKTeX\2.9\tex\latex\newtx\ts1ntxtlf.fd
+("/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/tex/latex
+/newtx/ts1ntxtlf.fd"
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
@@ -722,10 +764,10 @@ File: system_design.png Graphic file (type png)
 <use system_design.png>
 Package pdftex.def Info: system_design.png  used on input line 44.
 (pdftex.def)             Requested size: 446.69426pt x 60.66135pt.
+ [1
 
-[1
-
-{C:/Users/HANSUNG/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/data/pdftex/config
+/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -734,54 +776,38 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 64.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 74.
+ [2 <./dataset_detail.jpg> <./system_design.png>] (project.aux)
 
-[2 <./dataset_detail.jpg> <./system_design.png>] (project.aux) ) 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
-<<<<<<< HEAD
- 6668 strings out of 494889
- 99314 string characters out of 3176656
- 153046 words of memory out of 3000000
- 10184 multiletter control sequences out of 15000+200000
- 32157 words of font info for 45 fonts, out of 3000000 for 9000
- 0 hyphenation exceptions out of 8191
- 53i,6n,92p,906b,210s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/en
-c/dvips/newtx/ntx-ec-tlf.enc}</Users/MacbookPro/Library/Application Support/MiK
-TeX/texmfs/install/fonts/type1/public/tex-gyre/qtmb.pfb></Users/MacbookPro/Libr
-ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qtmr.
-pfb></Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/
-type1/public/tex-gyre/qtmri.pfb>
-Output written on project.pdf (1 page, 82449 bytes).
-=======
-=======
->>>>>>> a374d6045f283317c902d843f6f9471588533428
- 6785 strings out of 492970
- 96383 string characters out of 3135848
- 161743 words of memory out of 3000000
- 10502 multiletter control sequences out of 15000+200000
+ 6785 strings out of 494889
+ 101007 string characters out of 3176656
+ 157006 words of memory out of 3000000
+ 10256 multiletter control sequences out of 15000+200000
  62090 words of font info for 107 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 0 hyphenation exceptions out of 8191
  53i,6n,92p,1069b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/HANSU
-NG/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{C:/Users/HA
-NSUNG/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Prog
-ram Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}{C:/Users/HANSUNG/AppData/Roam
-ing/MiKTeX/2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}<C:/Users/HANSUNG/AppData/Roa
-ming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/HANSUNG/AppData/
-Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/HANSUNG/AppDa
-ta/Roaming/MiKTeX/2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Users/HANSUNG/A
-ppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rntxmi.pfb><C:/Users/HANSUNG
-/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/rntxmi7.pfb><C:/Users/HANS
-UNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/rtxr.pfb><C:/Users/HA
-NSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txexs.pfb><C:/Users/H
-ANSUNG/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/newtx/txsys.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+{/Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/en
+c/dvips/newtx/ntx-ec-tlf.enc}{/Users/MacbookPro/Library/Application Support/MiK
+TeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/Users/MacbookPro/Lib
+rary/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/base/8r.enc}{/Us
+ers/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvip
+s/tex-gyre/q-ts1.enc}</Users/MacbookPro/Library/Application Support/MiKTeX/texm
+fs/install/fonts/type1/public/tex-gyre/qtmb.pfb></Users/MacbookPro/Library/Appl
+ication Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qtmr.pfb></Us
+ers/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
+blic/tex-gyre/qtmri.pfb></Users/MacbookPro/Library/Application Support/MiKTeX/t
+exmfs/install/fonts/type1/public/newtx/rntxmi.pfb></Users/MacbookPro/Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/rntxmi7.pfb></
+Users/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/
+public/txfonts/rtxr.pfb></Users/MacbookPro/Library/Application Support/MiKTeX/t
+exmfs/install/fonts/type1/public/newtx/txexs.pfb></Users/MacbookPro/Library/App
+lication Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsys.pfb></Use
+rs/MacbookPro/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/urw
+/times/utmri8a.pfb>
 Output written on project.pdf (2 pages, 211471 bytes).
-<<<<<<< HEAD
->>>>>>> a374d6045f283317c902d843f6f9471588533428
-=======
->>>>>>> a374d6045f283317c902d843f6f9471588533428
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
