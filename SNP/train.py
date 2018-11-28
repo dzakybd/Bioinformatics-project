@@ -9,16 +9,16 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.decomposition import PCA
 import pickle
 
-try:
-	data = sys.argv[1]
-	results = sys.argv[2]
-except BaseException:
-	output.write("\nError: This script should be run with the following (valid) flags:\n python train.py results/ results/\n")
-	sys.exit(-1)
+import warnings
+warnings.simplefilter(action='ignore')
+
+
+data = "results"
+results = "results"
 
 data_path = os.getcwd() + "/" + data + "/train_data_matrix.csv" 
 labels_path = os.getcwd() + "/" + data + "/train_labels.csv"
-results_path = os.getcwd() + "/" + results
+results_path = os.getcwd() + "/" + results + "/"
 output = open(results_path + "/train_output.txt", 'w')
 
 raw_data_matrix = np.genfromtxt(data_path, skip_header=1, delimiter=',')

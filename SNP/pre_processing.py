@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 import sys
 import os 
 import xml.etree.ElementTree as ET
@@ -8,12 +9,8 @@ except ImportError:
     Set = set
 from sklearn.model_selection import train_test_split
 
-try:
-	data = "data"
-	results = "pd"
-except BaseException:
-	print("\nError: This script should be run with the following (valid) flags:\n python pre_processing.py data/ results/\n")
-	sys.exit(-1)
+data = "data"
+results = "results"
 
 map_path = os.getcwd() + "/" + data + "/entity_id_to_uuid.txt" 
 snv_path = os.getcwd() + "/" + data + "/snv"
@@ -26,7 +23,7 @@ with open(map_path, 'r') as file:
 	for line in file:
 		raw = line.replace("\n", "").lstrip().split("\t")
 		entity_id = raw[0]
-		uuid =  raw[2]
+		uuid = raw[2]
 		entity_id_to_uuid[entity_id] = uuid
 
 # Determining the UUID and Gleason scores of our clinical data
@@ -73,11 +70,11 @@ for subdir, dirs, files in os.walk(snv_path):
 		path = subdir + "/" + file
 		isMAF = ((file[len(file) - 3:]) == "maf")
 		if isMAF:
-#data = pd.read_csv(path, delimiter = "\t", dtype= str)
-
-			aaa = pd.read_csv(path, delimiter = '\t', dtype= 'str')
-			snv_data = aaa.values            
-#			snv_data = np.genfromtxt(path,dtype='str', delimiter='\t')
+# #data = pd.read_csv(path, delimiter = "\t", dtype= str)
+#
+# 			aaa = pd.read_csv(path, delimiter = '\t', dtype= 'str')
+# 			snv_data = aaa.values
+			snv_data = np.genfromtxt(path,dtype='str', delimiter='\t')
 
 			for i in range(1, len(snv_data)):
 				#skip onto next item
@@ -115,7 +112,7 @@ for subdir, dirs, files in os.walk(snv_path):
 
 			#get sorted list of every entity ID
 			entity_ids = entity_id_to_features.keys()
-			entity_ids.sort()
+			entity_ids = sorted(entity_ids)
 			entity_ids_to_row = {}
 
 			for i in range (0, len(entity_ids)):

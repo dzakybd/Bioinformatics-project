@@ -10,12 +10,8 @@ from sklearn.decomposition import PCA
 import pickle
 from sklearn.metrics import accuracy_score
 
-try:
-	data = sys.argv[1]
-	results = sys.argv[2]
-except BaseException:
-	print("\nError: This script should be run with the following (valid) flags:\n python test.py results/ results/\n")
-	sys.exit(-1)
+data = "results"
+results = "results"
 
 data_path = os.getcwd() + "/" + data + "/test_data_matrix.csv" 
 labels_path = os.getcwd() + "/" + data + "/test_labels.csv"
