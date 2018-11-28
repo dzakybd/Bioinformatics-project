@@ -1,13 +1,11 @@
 import pandas as pd
+import numpy as np
 from __init__ import *
 from sklearn import metrics, linear_model, svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.neural_network import MLPClassifier
-
-import warnings
-warnings.simplefilter(action='ignore')
 
 def calculate_metrics(true_values, predicted_values):
     """
@@ -63,7 +61,12 @@ def logistic_model(train, test):
 
     log_model = linear_model.LogisticRegression()
 
-    log_model.fit(X=train[train.columns[:-1]], y=train[attribute].astype('int'))
+    print(train[train.columns[:-1]].isnull())
+    train.columns[:-1] = pd.to_numeric(train.columns[:-1], errors='coerce')
+    train = train.dropna(subset=[train.columns[:-1]])
+    df['x'] = df['x'].astype(int)
+
+    log_model.fit(X=coba, y=train[attribute].astype(int))
 
     predicted = log_model.predict(X=test[test.columns[:-1]])
     predicted = pd.DataFrame(predicted)
