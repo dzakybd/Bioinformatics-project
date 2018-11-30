@@ -1,5 +1,4 @@
 import pandas as pd
-from sklearn.preprocessing import Imputer
 from __init__ import *
 import warnings
 warnings.simplefilter(action='ignore')
@@ -36,7 +35,14 @@ def genes_feature_selection(methyl_data, cancer_genes):
     return methyl_data.ix[overlap_genes]
 
 
-def add_hgpca_label(methyl_data):
+def miss_data_impute(methyl_data):
+    for col in methyl_data.columns:
+        methyl_data[col] = (pd.to_numeric(methyl_data[col], errors='coerce'))
+        methyl_data[col] = methyl_data[col].fillna(methyl_data[col].mean())
+    return methyl_data
+
+
+def add_label(methyl_data):
     case_ids = methyl_data.columns.values
     labels = []
 
@@ -50,10 +56,6 @@ def add_hgpca_label(methyl_data):
         else:
             labels.append(1)
 
-    for col in methyl_data.columns:
-        methyl_data[col] = (pd.to_numeric(methyl_data[col], errors='coerce'))
-        methyl_data[col] = methyl_data[col].fillna(methyl_data[col].mean())
-
     labels = [int(i) for i in labels]
     methyl_data.loc[methyl_data.shape[0]] = labels
     methyl_data = methyl_data.rename(index={methyl_data.shape[0] - 1: attribute})
@@ -65,43 +67,43 @@ def train_test_data(methyl_data):
     training_data = pd.DataFrame()
     testing_data = pd.DataFrame()
 
-    normal_cases = methyl_data[methyl_data[attribute] == 0]
-    logger.info("normal_cases.shape " + str(normal_cases.shape))
-    train_normal_cases = normal_cases.sample(frac=0.7, random_state=1)
-    test_normal_cases = normal_cases.drop(train_normal_cases.index)
+    not_severe_group = methyl_data[methyl_data[attribute] == 0]
+    logger.info("not_severe_group.shape " + str(not_severe_group.shape))
+    train_ns_group = not_severe_group.sample(frac=0.7, random_state=1)
+    test_ns_group = not_severe_group.drop(train_ns_group.index)
 
-    tumor_cases = methyl_data[methyl_data[attribute] == 1]
-    logger.info("tumor_cases.shape " + str(tumor_cases.shape))
-    train_tumor_cases = tumor_cases.sample(frac=0.7, random_state=1)
-    test_tumor_cases = tumor_cases.drop(train_tumor_cases.index)
+    severe_group = methyl_data[methyl_data[attribute] == 1]
+    logger.info("severe_group.shape " + str(severe_group.shape))
+    train_s_group = severe_group.sample(frac=0.7, random_state=1)
+    test_s_group = severe_group.drop(train_s_group.index)
 
-    training_data = training_data.append(train_normal_cases)
-    training_data = training_data.append(train_tumor_cases)
-    testing_data = testing_data.append(test_normal_cases)
-    testing_data = testing_data.append(test_tumor_cases)
+    training_data = training_data.append(train_ns_group)
+    training_data = training_data.append(train_s_group)
+    testing_data = testing_data.append(test_ns_group)
+    testing_data = testing_data.append(test_s_group)
 
     training_data = training_data.sample(frac=1, random_state=1)
     testing_data = testing_data.sample(frac=1, random_state=1)
 
-    logger.info('Pickling training and testing data')
-    training_data.to_pickle(train_path+attribute)
-    testing_data.to_pickle(test_path+attribute)
+    logger.info('Saving training and testing data')
+    training_data.to_csv(train_path+".csv")
+    testing_data.to_csv(test_path+".csv")
+    training_data.to_pickle(train_path+".pkl")
+    testing_data.to_pickle(test_path+".pkl")
 
     logger.info('Processing completed!')
-
     return training_data, testing_data
 
 
 def build():
     """
-    Read and process DNA methylation data of 6 cancer subtypes.
-    Processing - feature selection, data imputation & adding classification label
+    Read and process DNA methylation data and preprocessing - feature selection, missing data imputation & adding label
     """
     logger.info('Process initiated - Building dataset')
 
-    if os.path.isfile(train_path+attribute) and os.path.isfile(test_path+attribute) and load_pickle:
-        logger.info('Loading pickled data')
-        return pd.read_pickle(train_path+attribute), pd.read_pickle(test_path+attribute)
+    if os.path.isfile(train_path) and os.path.isfile(test_path) and load_pickle:
+        logger.info('Loading train & test data')
+        return pd.read_pickle(train_path+".pkl"), pd.read_pickle(test_path+".pkl")
 
     logger.info('Reading COSMIC Cancer Gene Census')
     gene_census = cosmic_cancer_genes()
@@ -118,7 +120,8 @@ def build():
     methyl_data = genes_feature_selection(methyl_data, gene_census)
     logger.info('Number of Genes after processing: {0}\n'.format(methyl_data.shape[0]))
 
-    methyl_data = add_hgpca_label(methyl_data)
+    methyl_data = miss_data_impute(methyl_data)
+    methyl_data = add_label(methyl_data)
     methyl_data = methyl_data.transpose()
 
     return train_test_data(methyl_data)

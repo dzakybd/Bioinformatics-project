@@ -3,21 +3,22 @@ import numpy as np
 from classifiers import logistic_model, knn_model, mlp_model, svm_model
 from __init__ import *
 import matplotlib.pyplot as plt
-
 import warnings
 warnings.simplefilter(action='ignore')
+
 
 def visualization(name, classifier_result):
     plt.cla()
     plt.clf()
-    print(classifier_result)
     y_pos = np.arange(len(classifier_result))
     plt.bar(y_pos, classifier_result.values(), align='center')
     plt.xticks(y_pos, classifier_result.keys())
     plt.ylabel('Accuracy')
     plt.ylim(0.0, 1.0)
     plt.title(name)
-    plt.savefig(name+".png", format="png")
+    figure_path = os.path.join(result_location, name+".png")
+    plt.savefig(figure_path, format="png")
+
 
 def main():
     """
@@ -75,6 +76,7 @@ def main():
     name, acc = mlp_model(train, test, "relu", (100, 100, 100))
     classifier_result[name] = acc
     visualization("MLP", classifier_result)
+
 
 if __name__ == '__main__':
     main()

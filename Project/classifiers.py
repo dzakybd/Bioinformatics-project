@@ -46,6 +46,8 @@ def mlp_model(train, test, activation, hidden_layers):
     mlp.fit(X=train[train.columns[:-1]], y=train[attribute])
     predicted = mlp.predict(X=test[test.columns[:-1]])
     predicted = pd.DataFrame(predicted)
+    if activation == "logistic":
+        activation = "sigmoid"
     name = "{0}\n{1} layer".format(activation, len(hidden_layers))
     logger.info(name)
     return name, calculate_metrics(test[attribute], predicted)
