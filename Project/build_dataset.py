@@ -1,52 +1,40 @@
 import pandas as pd
+from sklearn.preprocessing import Imputer
 from __init__ import *
-
 import warnings
 warnings.simplefilter(action='ignore')
-
 
 def cosmic_cancer_genes():
     """
     Read COSMIC Cancer Gene Census - catalogue those genes for which mutations have been causally implicated in cancer
-
-    :return: list of cancer genes along with synonyms
     """
-
     gene_census_data = pd.read_csv(cosmic_path, skipinitialspace=True, usecols=['Gene Symbol', 'Synonyms'], delimiter='\t')
     gene_census = list(gene_census_data['Gene Symbol'])
-
-    logger.info('Number of Cancer Gene Census: {0}\n'.format(len(gene_census)))
 
     for synonynm in gene_census_data['Synonyms']:
         if type(synonynm) is str:
             gene_census.extend(synonynm.split(','))
-
+    logger.info('Number of COSMIC Cancer Catalogue: {0}\n'.format(len(gene_census)))
     return gene_census
 
 
 def civic_cancer_genes():
     """
     Read Clinical Interpretation of Variants in Cancer (Civic) catalogue of cancer genes
-
-    :return: list of cancer genes
     """
-
     civic_genes_data = pd.read_csv(civic_path, skipinitialspace=True, usecols=['name'], delimiter='\t')
     civic_genes = list(civic_genes_data['name'])
+    logger.info('Number of Civic Cancer Catalogue: {0}\n'.format(len(civic_genes)))
     return civic_genes
 
 
 def genes_feature_selection(methyl_data, cancer_genes):
     """
     Reduce feature space of protein-binding genes by considering COSMIC & CIVIC data
-
-    :param methyl_data: DNA methylation data with >20000 protein-coding genes
-    :return: list of reduced set of genes
     """
-
     overlap_genes = cancer_genes.intersection(methyl_data.index)
-
     return methyl_data.ix[overlap_genes]
+
 
 def add_hgpca_label(methyl_data):
     case_ids = methyl_data.columns.values
@@ -62,22 +50,28 @@ def add_hgpca_label(methyl_data):
         else:
             labels.append(1)
 
+    for col in methyl_data.columns:
+        methyl_data[col] = (pd.to_numeric(methyl_data[col], errors='coerce'))
+        methyl_data[col] = methyl_data[col].fillna(methyl_data[col].mean())
+
+    labels = [int(i) for i in labels]
     methyl_data.loc[methyl_data.shape[0]] = labels
     methyl_data = methyl_data.rename(index={methyl_data.shape[0] - 1: attribute})
 
     return methyl_data
+
 
 def train_test_data(methyl_data):
     training_data = pd.DataFrame()
     testing_data = pd.DataFrame()
 
     normal_cases = methyl_data[methyl_data[attribute] == 0]
-    logger.info(normal_cases.shape)
+    logger.info("normal_cases.shape " + str(normal_cases.shape))
     train_normal_cases = normal_cases.sample(frac=0.7, random_state=1)
     test_normal_cases = normal_cases.drop(train_normal_cases.index)
 
     tumor_cases = methyl_data[methyl_data[attribute] == 1]
-    logger.info(tumor_cases.shape)
+    logger.info("tumor_cases.shape " + str(tumor_cases.shape))
     train_tumor_cases = tumor_cases.sample(frac=0.7, random_state=1)
     test_tumor_cases = tumor_cases.drop(train_tumor_cases.index)
 
@@ -101,16 +95,13 @@ def train_test_data(methyl_data):
 def build():
     """
     Read and process DNA methylation data of 6 cancer subtypes.
-    Processing - feature selection, data imputation & adding classification label (tumor '1' or not tumor '0')
-
-    :return: DNA methylation training and testing dataframe
+    Processing - feature selection, data imputation & adding classification label
     """
-
     logger.info('Process initiated - Building dataset')
 
-    # if os.path.isfile(train_path+attribute) and os.path.isfile(test_path+attribute):
-    #     logger.info('Loading pickled data')
-    #     return pd.read_pickle(train_path+attribute), pd.read_pickle(test_path+attribute)
+    if os.path.isfile(train_path+attribute) and os.path.isfile(test_path+attribute) and load_pickle:
+        logger.info('Loading pickled data')
+        return pd.read_pickle(train_path+attribute), pd.read_pickle(test_path+attribute)
 
     logger.info('Reading COSMIC Cancer Gene Census')
     gene_census = cosmic_cancer_genes()
@@ -119,9 +110,7 @@ def build():
     gene_census = set(gene_census)
     gene_census = {x for x in gene_census if pd.notna(x)}
 
-
     logger.info('Reading Methylation data of TCGA PRAD')
-    print(meth_path)
     methyl_data = pd.read_csv(meth_path, delimiter='\t', skiprows=[1], index_col=0)
     logger.info('Number of Genes: {0} | Number of Patients: {1}'.format(methyl_data.shape[0], methyl_data.shape[1]))
     logger.info('Preprocessing Methylation data')
@@ -130,9 +119,7 @@ def build():
     logger.info('Number of Genes after processing: {0}\n'.format(methyl_data.shape[0]))
 
     methyl_data = add_hgpca_label(methyl_data)
-
     methyl_data = methyl_data.transpose()
-
 
     return train_test_data(methyl_data)
 
