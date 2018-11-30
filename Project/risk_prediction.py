@@ -16,6 +16,11 @@ def visualization(name, classifier_result):
     plt.ylabel('Accuracy')
     plt.ylim(0.0, 1.0)
     plt.title(name)
+    rects = plt.axes().patches
+    labels = ['%.2f' % elem for elem in classifier_result.values()]
+    for rect, label in zip(rects, labels):
+        height = rect.get_height()
+        plt.axes().text(rect.get_x() + rect.get_width() / 2, height + 5, label, ha='center', va='bottom')
     figure_path = os.path.join(result_location, name+".png")
     plt.savefig(figure_path, format="png")
 
