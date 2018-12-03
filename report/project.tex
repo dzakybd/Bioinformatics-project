@@ -5,23 +5,25 @@
 \usepackage{newtxtext,newtxmath}
 \usepackage[top=0.7in, bottom=0.7in, left = 0.7in, right = 0.7in]{geometry}
 \usepackage{enumitem}
-\setlist{nolistsep}
 \usepackage{caption}
 \setlength{\belowcaptionskip}{-10pt}
-\let\OLDthebibliography\thebibliography
-\renewcommand\thebibliography[1]{
-  \OLDthebibliography{#1}
-  \setlength{\parskip}{0pt}
-  \setlength{\itemsep}{0pt plus 0.3ex}
-}
+
+%\setlist{nolistsep}
+%\let\OLDthebibliography\thebibliography
+%\renewcommand\thebibliography[1]{
+%  \OLDthebibliography{#1}
+%  \setlength{\parskip}{0pt}
+%  \setlength{\itemsep}{0pt plus 0.3ex}
+%}
+
 \begin{document}
-\title{\vspace{-0.7in}High-Grade Prostate Cancer Prediction using DNA Methylation Data}
+\title{\vspace{-0.7in}Term Project Report\\High-Grade Prostate Cancer Prediction using DNA Methylation Data}
 \author{Fawwaz Dzaky Zakiyal (201899213)\\Tanjung Dion (201883621)\\}
 \date{Bioinformatics (Fall 2018)}
 \maketitle
  
 \section{Introduction}
-Prostate cancer affects a significant proportion of the male population, but in most cases, the disease is harmless. However, for the small portion of the population with high-grade prostate cancer, the disease can be extremely debilitating, causing painful symptoms and even death \cite{prostate}. Prior studies have been performed, showing how hereditary factors, alcohol consumption, sexual activity, family history, and race can take a role in developing high-grade prostate cancer. Over the past years, rapid advances in sequencing technology have led to The Cancer Genome Atlas (TCGA) project which provides the most comprehensive genomic data for various kinds of cancer. In the previous research, to indicates the classification of patient samples was done by using TCGA Exon expression or SNP datasets. However, the recent study shows that DNA methylation act as better bio-markers and help in improving the cancer prognosis \cite{dnameth}. Beside that, in the recent years, machine learning become useful tool for prediction and regression tasks. It could bring benefit for the cancer risk prediction. Thus, this project implement machine learning techniques to classify high-grade prostate cancer risk using DNA methylation data.
+Prostate cancer affects a significant proportion of the male population, but in most cases, the disease is harmless. However, for the small portion of the population with high-grade prostate cancer, the disease can be extremely debilitating, causing painful symptoms and even death \cite{prostate}. Over the past years, rapid advances in sequencing technology have led to The Cancer Genome Atlas (TCGA) project which provides the most comprehensive genomic data for various kinds of cancer. In the previous research, to indicates the classification of patient samples was done by using TCGA Exon expression or SNP datasets. However, the recent study shows that DNA methylation act as better bio-markers and help in improving the cancer prognosis \cite{dnameth}. Beside that, in the recent years, machine learning become a useful tool for prediction and regression tasks. It could bring benefit to the cancer risk prediction. Thus, this project implements machine learning techniques to classify high-grade prostate cancer risk using DNA methylation data.
 
 
 \section{Methodology}
@@ -34,14 +36,14 @@ Prostate cancer affects a significant proportion of the male population, but in 
 \end{itemize}
 
 \subsection{Dataset}
-The dataset come from the National Cancer Institute GDC Data Portal and can be found online under Project TCGA-PRAD (The Cancer Genome Atlas Prostate Adenocarcinoma) \cite{praddata}. This dataset consists of genomic information and clinical pathology reports belonging to 549 patients who have been diagnosed with prostate cancer (a Gleason Score anywhere between 2 to 10). It contains both clinical (recurrence, survival \& treatment resistance) and molecular profiles (Exon (mRNA) expression, DNA methylation, Copy Number Variations (CNV) \& Single Nucleotide Polymorphism (SNP)) for both tumor samples and normal controls. The file that we used are:
+The dataset comes from the National Cancer Institute GDC Data Portal and can be found online under Project TCGA-PRAD (The Cancer Genome Atlas Prostate Adenocarcinoma) \cite{praddata}. This dataset consists of genomic information and clinical pathology reports belonging to 549 patients who have been diagnosed with prostate cancer (a Gleason Score anywhere between 2 to 10). It contains both clinical (recurrence, survival \& treatment resistance) and molecular profiles (Exon (mRNA) expression, DNA methylation, Copy Number Variations (CNV) \& Single Nucleotide Polymorphism (SNP)) for both tumor samples and normal controls. The file that we used are:
 \begin{itemize}
 \item \textbf{PRAD.meth.by\_mean.data}: the mean signal values among each gene corresponding to the patient barcode. The size is 20111 genes x 549 patients (52 MB). This data become our learning features.
 \item \textbf{All\_CDEs}: clinical data elements corresponding to the patient barcode. It contains many related information, but we only consider the gleason score.
 \end{itemize}
 
 \subsection{System Design}
-The process consists of preprocessing of TCGA-PRAD dataset, consist of feature selection, missing data imputation \& adding label. After that, split the dataset into training \& testing data, next we training \& evaluating the classifier models. The system design can be seen in Figure \ref{fig:system_design}. The system specification where this project running on:
+The process consists of preprocessing of TCGA-PRAD dataset, consist of feature selection, missing data imputation \& adding the label. After that, split the dataset into training \& testing data, next we train \& evaluate the classifier models. The system design can be seen in Figure \ref{fig:system_design}. The system specification where this project running on:
 \begin{itemize}
 \item \textbf{Programming language}: Python
 \item \textbf{Support library}: Scikit-Learn \& Pandas
@@ -59,7 +61,7 @@ The process consists of preprocessing of TCGA-PRAD dataset, consist of feature s
 \begin{itemize}
 \item \textbf{Feature selection}: To reduce the feature space of the dataset, only those genes for which mutations have been causally implicated in cancer are considered, these are obtained through resources like \textit{COSMIC} (Catalogue of Somatic Mutations in Cancer) that consist of 3946 genes information \cite{cosmicdata}, and \textit{CIVIC} (Clinical Interpretation of Variants in Cancer) that consist of 3946 genes information \cite{civicdata}. Originally, our dataset has 20111 genes, after feature selection it has only 821 genes.
 \item \textbf{Missing data imputation}: It is the process of replacing missing data of dataset features with substituted values. This project using mean imputation.
-\item \textbf{Adding label}: We categorized into 2 classes, between score of 2 to 7 (not severe) and 8 to 10 (HGPCa / severe)  from All\_CDEs data. We added class labels to the dataset with correspond to the patient id.
+\item \textbf{Adding the label}: We categorized into 2 classes, between score of 2 to 7 (not severe) and 8 to 10 (HGPCa / severe)  from All\_CDEs data. We added class labels to the dataset with correspond to the patient id.
 
 \end{itemize}
 
@@ -72,21 +74,28 @@ The process consists of preprocessing of TCGA-PRAD dataset, consist of feature s
   \caption{Dataset split}
   \label{fig:data_split}
 \end{figure}
-\item \textbf{Training and evaluation}: This project perform on several machine learning algorithms, namely \textit{Logistic Regression} (LR), \textit{K-Nearest Neighbor} (KNN), \textit{Support Vector Machine} (SVM), \textit{Multilayer Perceptron} (MLP). In the experiments, we evaluate parameters for each machine learning method to find the one that gives highest accuracy.
+\item \textbf{Training and evaluation}: This project perform on several machine learning algorithms, namely \textit{Logistic Regression}, \textit{K-Nearest Neighbor}, \textit{Support Vector Machine}, \textit{Multilayer Perceptron}. In the experiments, we evaluate parameters for each machine learning method to find the one that gives highest accuracy.
 \end{itemize}
 
 \section{Experiments}
 \begin{itemize}
-\item \textbf{Evaluation on Logistic Regression} : Logistic regression is a technique that finds the optimal linear boundary between the two classes. In order to combat overfitting, it is common practice to add a regularization term logistic models. With logistic regression we have the option between the L1 and L2 norm. Although the only difference between these two terms is that one is simply a sum (L1) and the other is simply a square of sums (L2). The result are\\
+\item \textbf{Evaluation on Logistic Regression (LR)}: The experiment cases are LR using L1 or L2 penalty. The result is LR+L1 accuracy (76.36\%) outperform LR+L2. The result shown at Figure \ref{fig:LR}.
 
-\item \textbf{Evaluation on K-Nearest Neighbor} : Logistic regression is a technique that finds the optimal linear boundary between the two classes. In order to combat overfitting, it is common practice to add a regularization term logistic models. With logistic regression we have the option between the L1 and L2 norm. Although the only difference between these two terms is that one is simply a sum (L1) and the other is simply a square of sums (L2). The result are\\
+\item \textbf{Evaluation on K-Nearest Neighbor (KNN)} : The experiment cases are KNN with number of neighbors 2, 3, 4, or 5. The result is KNN with 3 neighbors accuracy (68.48\%) outperform the other cases. The result shown at Figure \ref{fig:KNN}.
 
-\item \textbf{Evaluation on Support Vector Machine} : Logistic regression is a technique that finds the optimal linear boundary between the two classes. In order to combat overfitting, it is common practice to add a regularization term logistic models. With logistic regression we have the option between the L1 and L2 norm. Although the only difference between these two terms is that one is simply a sum (L1) and the other is simply a square of sums (L2). The result are\\
+\item \textbf{Evaluation on Support Vector Machine (SVM)}: The experiment cases are SVM using linear kernel, RBF kernel, or Poly kernel (degree 2, 3, or 4). The result is SVM using linear kernel accuracy (76.97\%) outperform the other cases. The result shown at Figure \ref{fig:SVM}.
 
-\item \textbf{Evaluation on Multilayer Perceptron} : Logistic regression is a technique that finds the optimal linear boundary between the two classes. In order to combat overfitting, it is common practice to add a regularization term logistic models. With logistic regression we have the option between the L1 and L2 norm. Although the only difference between these two terms is that one is simply a sum (L1) and the other is simply a square of sums (L2). The result are
+\item \textbf{Evaluation on Multilayer Perceptron (MLP)}: The experiment cases are MLP using Sigmoid/Logistic, Tanh or ReLU activation function with number of hidden layers 1 (100 neurons) or 2 (100 neurons \& 100 neurons). The result is MLP using Tanh activation function with 2 hidden layer accuracy (76.97\%) outperform the other cases. The result shown at Figure \ref{fig:MLP}.
+
 \end{itemize}
 
-\begin{figure}
+
+\section{Conclusion}
+This project succeeds in implementing machine learning techniques to classify high-grade prostate cancer risk using DNA methylation data. From the experiments, the result shows that SVM and MLP give the highest accuracy at the same value, 76.97\%.
+\par
+Future work to increase the performance accuracy are further explore in tuning the other parameters of each machine learning algorithms and try in combining the other dataset features, such as SNP, Exon, the other clinical data information (hereditary factors, alcohol consumption, sexual activity, race, etc.).
+
+\begin{figure}[h]
 	\centering
 	\begin{minipage}[t]{8.6cm}
 \includegraphics[width=1\linewidth]{LR}
@@ -102,7 +111,7 @@ The process consists of preprocessing of TCGA-PRAD dataset, consist of feature s
 	\end{minipage}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\begin{minipage}[t]{8.6cm}
 \includegraphics[width=1\linewidth]{SVM}
@@ -117,13 +126,6 @@ The process consists of preprocessing of TCGA-PRAD dataset, consist of feature s
   \label{fig:MLP}
 	\end{minipage}
 \end{figure}
-
-
-\section{Conclusion}
-\begin{itemize}
-\item \textbf{Result}: 
-\item \textbf{Future work}: 
-\end{itemize}
 
 \begin{thebibliography}{1}
 \bibitem{prostate} Ilir Agalliu, Robert Gern, Suzanne Leanza, and Robert D. Burk. 2009. {\em Associations of High-Grade Prostate Cancer with BRCA1 and BRCA2 Founder Mutations.} Clinical Cancer Research. Vol. 15, No. 3.
