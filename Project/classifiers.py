@@ -8,7 +8,7 @@ def calculate_metrics(true_values, predicted_values):
     """
     Calculate precision, recall, f1-score and support based on classifier output
     """
-    acc = metrics.accuracy_score(y_true=true_values, y_pred=predicted_values)
+    acc = metrics.accuracy_score(y_true=true_values, y_pred=predicted_values) * 100
     report = metrics.classification_report(y_true=true_values, y_pred=predicted_values)
     result = "Accuracy = " + str(acc) + "\n" + str(report)
     logger.info(result)
