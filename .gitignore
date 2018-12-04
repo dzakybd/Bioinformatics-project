@@ -89,7 +89,4 @@ ENV/
 
 # Rope project settings
 .ropeproject
-Project/.idea/inspectionProfiles/Project_Default.xml
-Project/.idea/misc.xml
-Project/.idea/Project.iml
-Project/.idea/workspace.xml
+Project/.idea/

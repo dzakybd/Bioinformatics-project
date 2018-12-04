@@ -270,3 +270,144 @@
 > severe_group.shape (214, 822)
 > Saving training and testing data
 > Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> Process initiated - Building dataset
+> Reading COSMIC Cancer Gene Census
+> Number of COSMIC Cancer Catalogue: 3946
+
+> Reading CIVIC Cancer Gene Census
+> Number of Civic Cancer Catalogue: 366
+
+> Reading Methylation data of TCGA PRAD
+> Number of Genes: 20111 | Number of Patients: 549
+> Preprocessing Methylation data
+> Number of Genes after processing: 821
+
+> not_severe_group.shape (335, 822)
+> severe_group.shape (214, 822)
+> Saving training and testing data
+> Processing completed!
+> We work on hgpca classification
+> We work on hgpca classification
+> We work on hgpca classification
+> We work on hgpca classification
+> We work on hgpca classification
